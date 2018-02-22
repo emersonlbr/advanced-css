@@ -1,0 +1,23 @@
+/* # Pillars to write good CSS and good websites
+
+1 - Responsive Design
+
+2 - Maintainable and scalable code
+
+3 - Web Performance
+
+*/
+
+
+/* 
+
+How is CSS parsed ?
+
+  The Cascade - process of combining different stylesheets and resolving conflits between different CSS files
+    Importance > specificity > source order
+
+  
+  CSS Values - Every CSS property has a value even if you haven't declared it
+  
+
+*/
