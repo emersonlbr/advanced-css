@@ -8,6 +8,38 @@
 
 */
 
+/* 
+2 - {
+  Think
+    Think about the layout of your webpage before writting the code
+    Modular - building blocks that make up interfaces
+    help together by the layout of the page
+    Re-usable - across a project and different projects
+    Independent - allowing us to use them anywhere on the page
+
+  Build
+    Your layout in HTML and CSS with a consistent structure for naming classes
+    A strategy name your classes
+
+  Architect
+    Create a logical architecture for your CSS with files and folders
+
+    7 - 1 Pattern
+      7 different folders for partial Sass files
+        base/ - basic project definitions 
+        componets/ - one file for each componet
+        layout/ - over layout of the project
+        pages/ - styles for specific pages of the project
+        themes/ - if you want to implement different visual themes 
+        abstracts/ - code that doesn't output any CSS, variables and Mixis 
+        vendors/ - Where all 3rd party CSS files goes 
+        
+      1 main Sass file to import all other files into a compiled CSS stylesheet 
+
+
+}
+*/
+
 
 /* 
 
@@ -18,6 +50,21 @@ How is CSS parsed ?
 
   
   CSS Values - Every CSS property has a value even if you haven't declared it
+
+  How units are converted from relative from absolute (PX)
+    the parent's width is the reference for percentaged based calculations
+
+  EMs
+    the reference is the parents computed font size
+  
+  REMs
+    Use the root for font-size
+
+  VH
+    1 = view port size
+  vw
+    1 = view port width
+
   
 
 */
