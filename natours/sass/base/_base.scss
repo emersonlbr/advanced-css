@@ -1,0 +1,24 @@
+// All partials start with _
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+
+  /* forcing inheritance */
+  box-sizing: inherit;
+}
+
+html {
+  /* in other to use REM as the unit  */
+  /* prefer REMs to EMs cause it has always the root as reference */
+
+  /* the standart font-size is 16px */
+  /* we want a 10px, so 10 / 16 = 0.625 thus 62.5% */
+  /* 1REM now = 10px so it makes our lives easier */
+  font-size: 62.5%;
+}
+
+/* You put the fonts on the body element */
+body {
+  box-sizing: border-box;
+}
