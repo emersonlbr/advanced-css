@@ -34,25 +34,22 @@ body {
   /* for the sliced part of the header */
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-
-.header__logo-box {
-  /* absolute relative to the header */
-  position: absolute;
-  /* top: 40px; */
-  top: 4rem;
-  /* left: 40px; */
-  left: 4rem; }
-
-.header__logo {
-  /* height: 35px; */
-  height: 3.5rem; }
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  .header__logo-box {
+    /* absolute relative to the header */
+    position: absolute;
+    /* top: 40px; */
+    top: 4rem;
+    /* left: 40px; */
+    left: 4rem; }
+  .header__logo {
+    /* height: 35px; */
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .header-primary {
   color: #fff;
@@ -61,37 +58,35 @@ body {
   backface-visibility: hidden;
   /* margin-bottom: 60px; */
   margin-bottom: 6rem; }
-
-.header-primary--main {
-  /* set each span in one line, block elements take the entire width of the page */
-  display: block;
-  /* font-size: 60px; */
-  font-size: 6rem;
-  font-weight: 400;
-  /* letter-spacing: 35px; */
-  letter-spacing: 3.5rem;
-  /* For the animation */
-  animation-name: moveInLeft;
-  animation-duration: .7s;
-  animation-timing-function: ease-out;
-  /* animation-delay: 2s;
-  animation-iteration-count: 2;
-  animation-timing-function: ease-in; */ }
-
-.header-primary--sub {
-  display: block;
-  /* font-size: 20px; */
-  font-size: 2rem;
-  font-weight: 700;
-  /* letter-spacing: 17.4px; */
-  letter-spacing: 1.74rem;
-  animation-name: moveInRight;
-  animation: moveInRight .7s ease-in-out; }
+  .header-primary--main {
+    /* set each span in one line, block elements take the entire width of the page */
+    display: block;
+    /* font-size: 60px; */
+    font-size: 6rem;
+    font-weight: 400;
+    /* letter-spacing: 35px; */
+    letter-spacing: 3.5rem;
+    /* For the animation */
+    animation-name: moveInLeft;
+    animation-duration: .7s;
+    animation-timing-function: ease-out;
+    /* animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in; */ }
+  .header-primary--sub {
+    display: block;
+    /* font-size: 20px; */
+    font-size: 2rem;
+    font-weight: 700;
+    /* letter-spacing: 17.4px; */
+    letter-spacing: 1.74rem;
+    animation-name: moveInRight;
+    animation: moveInRight .7s ease-in-out; }
 
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(-10rem); }
+    transform: translateX(10rem); }
   80% {
     transform: translateX(-1.5rem); }
   100% {
@@ -118,53 +113,46 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-/* link is a pseudo class */
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 10rem;
-  transition: all .2s;
-  position: relative;
-  font-size: 1.6rem; }
-
-.btn:hover {
-  transform: translateY(-0.3rem);
-  /* box-shadow: Y X Blur Color; */
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
-
-.btn--white {
-  background-color: #fff;
-  color: #777; }
-
-/* the after element behaves like a child */
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* the position of the element behind one another */
-  z-index: -1;
-  transition: all .4s; }
-
-.btn--white::after {
-  background-color: #fff; }
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0; }
-
-.btn--animated {
-  animation: moveInButton .7s ease-out .7s;
-  /* will apply the styles before the animation starts */
-  animation-fill-mode: backwards; }
+.btn {
+  /* link is a pseudo class */
+  /* the after element behaves like a child */ }
+  .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem; }
+  .btn:hover {
+    transform: translateY(-0.3rem);
+    /* box-shadow: Y X Blur Color; */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
+  .btn--white {
+    background-color: #fff;
+    color: #777; }
+    .btn--white::after {
+      background-color: #fff; }
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* the position of the element behind one another */
+    z-index: -1;
+    transition: all .4s; }
+  .btn--animated {
+    animation: moveInButton .7s ease-out .7s;
+    /* will apply the styles before the animation starts */
+    animation-fill-mode: backwards; }
