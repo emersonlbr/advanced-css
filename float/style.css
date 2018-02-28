@@ -1,8 +1,43 @@
+html {
+  /* in other to use REM as the unit  */
+  /* prefer REMs to EMs cause it has always the root as reference */
+  /* the standart font-size is 16px */
+  /* we want a 10px, so 10 / 16 = 0.625 thus 62.5% */
+  /* 1REM now = 10px so it makes our lives easier */
+  font-size: 62.5%; }
+
+/* You put the fonts on the body element */
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  color: white; }
+
 .row {
-  max-width: 1140px;
-  background-color: red;
+  max-width: 114rem;
+  background-color: #1f9115;
   margin: 0 auto; }
   .row:not(:last-child) {
-    margin-bottom: 80px; }
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    background-color: orange;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) /2 ); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem ); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 *  ((100% - 3 * 6rem) / 4) + 6rem ); }
+  .row .col-3-of-4 {
+    width: calc( 3 *  ((100% - 3 * 6rem) / 4) + 2 *  6rem ); }
 
 /*# sourceMappingURL=style.css.map */
