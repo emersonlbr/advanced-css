@@ -1,0 +1,10 @@
+.row {
+  max-width: 1140px;
+  background-color: red;
+  margin: 0 auto;
+
+  // select everything but the last child
+  &:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
