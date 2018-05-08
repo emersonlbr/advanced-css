@@ -1,0 +1,31 @@
+/* 
+
+to use flexbox just add:
+  .container {
+      display: flex;
+  }
+
+  //then you can change the flex items (whats inside the container)
+
+properties on the CONTAINER:
+  flex-direction: row | column
+  flex-wrap: no wrap | wrap
+
+  // horizontal
+  justify-content: flex-start | end | center | space-between | space-around | space evenly
+
+  //vertical
+  align-items: stretch | flex-start | end | center | baseline
+
+  // only applies when there's more than one row
+  align-content: stretch | flex-start | end | center | space-between | space-arround
+
+properties on the FLEX-ITEM:
+
+  align-self:
+  order: <integer>
+  flex-shrink: 
+  flex-basis: 
+
+
+*/
