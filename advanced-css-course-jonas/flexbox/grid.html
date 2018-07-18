@@ -1,0 +1,72 @@
+<body>
+  <div class="container">
+    <div class="item item--1">1: Orange</div>
+    <div class="item item--2">2: Green</div>
+    <div class="item item--3">3: Violet</div>
+    <div class="item item--4">4: Blue</div>
+    <div class="item item--5">5: Pink</div>
+    <div class="item item--6">6: Red</div>
+  </div>
+
+  <style>
+    
+    .container {
+      background-color: #eee;
+      width: 1000px;
+      margin: 20px auto;
+      display: grid;
+
+      /* grid-template-rows: 150px 150px; */
+
+      /* number of rows and the size  */
+      grid-template-rows: repeat(2, 150px);
+
+      /* grid-template-columns: 150px 150px 150px; */
+      /* grid-template-columns: repeat(3, 150px); */
+
+      grid-template-columns: repeat(3, 1fr);
+
+      /* grid-row-gap: 20px; */
+      /* grid-column-gap: 20px; */
+      grid-gap: 20px;
+    }
+
+    .item {
+      padding: 20px;
+      font-size: 20px;
+      color: white;
+    }
+
+
+
+
+
+
+
+    .item--1 {
+      background-color: orange;
+    }
+
+     .item--2 {
+      background-color: green;
+    }
+
+     .item--3 {
+      background-color: violet;
+    }
+
+     .item--4 {
+      background-color: blue;
+
+    }
+
+     .item--5 {
+      background-color: pink;
+    }
+
+     .item--6 {
+      background-color: red;
+    }
+
+  </style>
+</body>
